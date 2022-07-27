@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNQodNM5LyXh3Kcen1potOn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/fmalik95/report1FM/blob/main/work%20shop%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ts0O7P5B8SIR",
+        "outputId": "b4d8006f-3237-4ef8-f7a8-6b8c3a0e04e5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Collecting wget\n",
+            "  Downloading wget-3.2.zip (10 kB)\n",
+            "Building wheels for collected packages: wget\n",
+            "  Building wheel for wget (setup.py) ... \u001b[?25l\u001b[?25hdone\n",
+            "  Created wheel for wget: filename=wget-3.2-py3-none-any.whl size=9675 sha256=24337f8fb12bc44713329f80a0e2e0e48eb4a93bc4a8dacc6e89bdb4f5870bab\n",
+            "  Stored in directory: /root/.cache/pip/wheels/a1/b6/7c/0e63e34eb06634181c63adacca38b79ff8f35c37e3c13e3c02\n",
+            "Successfully built wget\n",
+            "Installing collected packages: wget\n",
+            "Successfully installed wget-3.2\n"
+          ]
+        }
+      ],
+      "source": [
+        "!pip install wget"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import wget\n",
+        "\n",
+        "link_to_data = 'https://github.com/tulip-lab/sit742/raw/master/Jupyter/data/score.txt'\n",
+        "DataSet = wget.download(link_to_data)\n",
+        "\n",
+        "print(DataSet)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7f6eI8Q89S4w",
+        "outputId": "75737df8-ca7c-4716-dc58-327308549611"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "score.txt\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
